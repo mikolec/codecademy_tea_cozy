@@ -1,0 +1,131 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2, h3, h4, h5 {
+    padding: 10px;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top:0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    padding: 0 10px;
+    background-color: black;
+}
+
+header .logo {
+    height: 50px;
+}
+
+nav span {
+    padding: 20px 10px;
+}
+
+nav a {
+    color: inherit;
+}
+
+header, section, footer {
+    max-width: 1200px;
+}
+
+.mission {
+    margin: 70px auto;
+    background-image: url(../resources/imgaes/img-mission-background.jpg);
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+.titlebar {
+    background-color: black;
+}
+
+.store {
+    /* background-color: darkblue; */
+    padding: 50px 0;
+}
+.store__items {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.store__items img {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}
+
+.store__items figure {
+    margin: 12px;
+}
+
+.store__items figcaption {
+    margin-top: 10px;
+}
+
+.locations {
+    width: 100%;
+    height: 500px;
+    background-image: url(../resources/imgaes/img-locations-background.jpg);
+    background-size: cover;
+    background-position-y: -20px;
+    padding: 100px 0;
+}
+.locations h2 {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.locations_wrapper {
+    display: flex;
+    justify-content: center;
+}
+.location {
+    background-color: #000;
+    margin: 10px 40px;
+    padding: 15px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.8;
+}
+
+.contact {
+    height: 200px;
+}
+
+.page_footer {
+   width: 100%;
+}
+.page_footer h5 {
+    text-align: left;
+}
