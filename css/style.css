@@ -5,23 +5,31 @@
 }
 
 body {
-    font-family: Helvetica;
-    font-size: 22px;
-    color: seashell;
-    background-color: black;
-    opacity: 0.9;
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: seashell;
+    background-color: black;    
+    font-family: Helvetica;
+    font-size: 22px;
+    opacity: 0.9;
+    text-align: center;
 }
 
 h2, h3, h4, h5 {
     padding: 10px;
-    margin: 0;
 }
 
-header {
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Header Section  */
+
+.header {
     position: fixed;
     top:0;
     z-index: 1;
@@ -35,7 +43,7 @@ header {
     background-color: black;
 }
 
-header .logo {
+.header .logo {
     height: 50px;
 }
 
@@ -47,50 +55,47 @@ nav a {
     color: inherit;
 }
 
-header, section, footer {
+/* Main  */
+.main {
     max-width: 1200px;
+    margin: 70px auto;
 }
 
+/* Mission Section  */
+
 .mission {
-    margin: 70px auto;
+    flex-direction: column;
+    height: 700px;
+    width: 100%;
     background-image: url(../resources/imgaes/img-mission-background.jpg);
     background-size: cover;
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
 }
 
 .titlebar {
     background-color: black;
 }
 
+/* Store section  */
+
 .store {
-    /* background-color: darkblue; */
-    padding: 50px 0;
-}
-.store__items {
-    width: 1200px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+   padding: 50px 0;
 }
 
-.store__items img {
+.store_items figure {
+    margin: 12px;
+}
+
+.store_items img {
     width: 300px;
     height: 200px;
     margin: 10px;
 }
 
-.store__items figure {
-    margin: 12px;
-}
-
-.store__items figcaption {
+.store_items figcaption {
     margin-top: 10px;
 }
+
+/* Locations section  */
 
 .locations {
     width: 100%;
@@ -119,13 +124,17 @@ header, section, footer {
     line-height: 1.8;
 }
 
+/* Contact section  */
+
 .contact {
     height: 200px;
 }
 
-.page_footer {
+/* Footer */
+
+.footer {
    width: 100%;
 }
-.page_footer h5 {
+.footer h5 {
     text-align: left;
 }
